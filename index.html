@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>作品展示</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', sans-serif;
+    }
+    .card {
+      background: rgba(255,255,255,0.08);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.15);
+      border-radius: 24px;
+      padding: 40px 32px;
+      width: 90%;
+      max-width: 380px;
+      text-align: center;
+      color: white;
+    }
+    .icon { font-size: 56px; margin-bottom: 16px; }
+    .title { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .desc { font-size: 14px; color: rgba(255,255,255,0.6); margin-bottom: 32px; line-height: 1.6; }
+    audio { width: 100%; border-radius: 12px; }
+    .tip { font-size: 12px; color: rgba(255,255,255,0.4); margin-top: 20px; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🎵</div>
+    <div class="title">在这里填写作品标题</div>
+    <div class="desc">在这里填写作品简介说明</div>
+    <audio controls preload="auto">
+      <source src="录音机-20260412-2259_1.wav" type="audio/wav">
+      您的浏览器不支持音频播放
+    </audio>
+    <div class="tip">请戴上耳机获得最佳体验</div>
+  </div>
+</body>
+</html>
